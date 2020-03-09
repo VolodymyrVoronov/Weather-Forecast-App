@@ -51,7 +51,7 @@ updateCity = async (city) => {
   const cityDetails = await getCity(city);  
   const cityWeather = await getWeather(cityDetails);
 
-  return {  cityDetails, cityWeather }
+  return {  cityDetails, cityWeather };
 }
 
 // search a city
@@ -60,10 +60,17 @@ citySearchForm.addEventListener('submit', e => {
   e.preventDefault();
 
   const city = citySearchForm.querySelector('.app__search').value.trim();
+  citySearchForm.reset();
 
   updateCity(city)
     .then(data => updateUI(data))
     .then(err => console.log(err));
-    citySearchForm.reset();
+    
+  localStorage.setItem('city', city);
 });
 
+if(localStorage.getItem('city')) {
+  updateCity(localStorage.getItem('city'))
+    .then(data => updateUI(data))
+    .then(err => console.log(err));
+}
