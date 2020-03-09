@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/s.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <title>Weather Forecast</title>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1 class="main-header__title">Weather Forecast</h1>
+    </header>  
+    <main class="app">
+      <form class="app__form">
+        <label for="city" class="app__title">Enter a city name...</label>
+        <input type="text" class="app__search" id="city" title="Enter a city name to get its weather forecast">
+      </form>
+      <section class="app__results">
+        <ul class="app__items"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="js/response.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
