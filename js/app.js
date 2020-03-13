@@ -33,7 +33,7 @@ updateUI = (data) => {
       <p class="item-info__title">${cityName}</p>
       <span class="item-info__date">${date}</span>
       <span class="item-info__weather-state">${weatherState}</span>
-      <img src="${weatherIcon}" alt="" class="item-info__weater-icon">
+      <img src="${weatherIcon}" alt="" class="item-info__weather-icon">
       <ul class="item-info__temp">
         <li class="item-info__min-temp">Min: ${minTemp} &#186;C</li>
         <li class="item-info__current-temp">${currentTemp} &#186;C</li>
