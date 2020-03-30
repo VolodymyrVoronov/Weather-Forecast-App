@@ -1,4 +1,4 @@
-## Weather Forecast App
+# Weather Forecast App
 
 The project online [here](https://volodymyrvoronov.github.io/Weather-Forecast-App/).
 
